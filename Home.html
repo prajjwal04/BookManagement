@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="shoppingApp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js"></script>
+</head>
+<body ng-controller="HomeController"> 
+    <h1>{{message}}</h1>
+    <a href="#/">Home</a>
+    <a href="#/Book">Book</a>
+    <a href="#/contact">Contact</a>
+    <a href="#/about">About</a>
+    <a href="#/PopularBooks">Popular Books</a>
+    <a href="#/Author">Authors</a>
+
+    <div ng-view></div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
